@@ -1,5 +1,0 @@
-# Installation
-
-    $ cd ~
-    $ git clone git://github.com/jbgo/vim-config.git
-    $ ./vim-config/install.sh

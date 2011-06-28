@@ -10,7 +10,7 @@ this one.
 
     cd ~
     git clone git://github.com/jbgo/vim-config.git ~/.vim-config
-    ./.vim-config/install.sh
+    .vim-config/install.sh
 
 ## Updates
 

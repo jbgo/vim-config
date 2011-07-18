@@ -38,7 +38,7 @@ autocmd WinLeave * setlocal nocursorline
 " python settings
 autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4
 let python_highlight_all=1
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', 'build', 'dist', '\.egg-info$']
 
 " toggle back and forth between current and previous buffer
 map <Leader>b :buffer#<cr>

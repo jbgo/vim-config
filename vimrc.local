@@ -8,6 +8,10 @@ map <Leader>ds :%s/[ <tab>]*$//<CR>
 " whitespace
 map <Leader>cw :%s/[ <tab>]*$//<CR>:retab!<CR>
 
+" Disable visibility of whitespace characters. Useful for viewing 3rd party
+" code that isn't always the cleanest.
+map <Leader>nw :set list listchars=
+
 " disable jslint highlighting
 let g:JSLintHighlightErrorLine = 0
 
@@ -38,7 +42,8 @@ autocmd WinLeave * setlocal nocursorline
 " python settings
 autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4
 let python_highlight_all=1
-let NERDTreeIgnore = ['\.pyc$', 'build', 'dist', '\.egg-info$']
+"let NERDTreeIgnore = ['\.pyc$', 'build', 'dist', '\.egg-info$']
+let NERDTreeIgnore = ['\.pyc$', 'dist', '\.egg-info$']
 
 " toggle back and forth between current and previous buffer
 map <Leader>b :buffer#<cr>
@@ -47,3 +52,6 @@ map <Leader>b :buffer#<cr>
 " (that's what the :help command is for!)
 map <F1> <Esc>
 imap <F1> <Esc>
+
+" symlinks to remote filesystem in this directory are killing performance of command-T
+set wildignore+=public/**

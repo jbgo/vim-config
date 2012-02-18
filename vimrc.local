@@ -57,4 +57,10 @@ imap <F1> <Esc>
 set wildignore+=public/**
 
 " delete surrounding parentheses and insert a space before opening parenthesis
-map dp ds)i <esc>
+map <Leader>dp ds)i <esc>
+
+" Press space to repeat last macro
+nnoremap <space> @q
+
+" Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
+au BufRead,BufNewFile {*.rabl} set ft=ruby

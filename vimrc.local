@@ -54,7 +54,7 @@ map <F1> <Esc>
 imap <F1> <Esc>
 
 " symlinks to remote filesystem in this directory are killing performance of command-T
-set wildignore+=public/**
+"set wildignore+=public/**
 
 " delete surrounding parentheses and insert a space before opening parenthesis
 map <Leader>dp ds)i <esc>
@@ -64,3 +64,4 @@ nnoremap <space> @q
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {*.rabl} set ft=ruby
+au BufRead,BufNewFile {*.yajl} set ft=ruby

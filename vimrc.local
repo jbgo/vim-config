@@ -65,3 +65,4 @@ nnoremap <space> @q
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {*.rabl} set ft=ruby
 au BufRead,BufNewFile {*.yajl} set ft=ruby
+au BufRead,BufNewFile {Guardfile} set ft=ruby

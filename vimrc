@@ -1,5 +1,15 @@
 set nocompatible
 
+" Add some plugins https://github.com/junegunn/vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'vim-scripts/HTML-AutoCloseTag'
+call plug#end()
+
 " Disable F1 for help screen - I open this accidentally all the time!
 :nmap <F1> :echo<CR>
 :imap <F1> <C-o>:echo<CR>
@@ -51,5 +61,10 @@ filetype plugin indent off
 let go_highlight_trailing_whitespace_error = 0
 set runtimepath+=/Users/jordan/projects/opensource/go/misc/vim
 filetype plugin indent on
-syntax on
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+" Enable solarized dark
+syntax enable
+set background=dark
+" let g:solarized_termcolors=256
+colorscheme solarized

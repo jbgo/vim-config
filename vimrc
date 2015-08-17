@@ -8,6 +8,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/HTML-AutoCloseTag'
+Plug 'chase/vim-ansible-yaml'
+Plug 'jtratner/vim-flavored-markdown'
 call plug#end()
 
 " Disable F1 for help screen - I open this accidentally all the time!

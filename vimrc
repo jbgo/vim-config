@@ -29,6 +29,9 @@ set noswapfile
 " Display line numbers
 set number
 
+" Use login shell when running commands within vim
+set shell=bash\ --login
+
 " Toggle back and forth between current and previous buffer
 map <Leader>b :buffer#<cr>
 
@@ -70,3 +73,13 @@ syntax enable
 set background=dark
 " let g:solarized_termcolors=256
 colorscheme solarized
+
+" PHP settings
+autocmd FileType php set tabstop=4|set shiftwidth=4
+autocmd FileType php set commentstring=//\ %s
+
+" GitHub flavored markdown via vim-flavored-markdown
+augroup markdown
+  au!
+  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END

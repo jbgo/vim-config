@@ -83,3 +83,7 @@ augroup markdown
   au!
   au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
+
+" yank text to OS X clipboard
+" http://evertpot.com/osx-tmux-vim-copy-paste-clipboard/
+set clipboard=unnamed

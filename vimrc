@@ -59,8 +59,10 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " Show hidden files in NERDTree
 let NERDTreeShowHidden=1
-" Automatically open NERDTree
-au VimEnter *  NERDTree
+
+"Open NERDTree if no files specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Some stuff for golang
 filetype off

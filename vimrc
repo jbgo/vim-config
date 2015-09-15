@@ -10,6 +10,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/HTML-AutoCloseTag'
 Plug 'chase/vim-ansible-yaml'
 Plug 'jtratner/vim-flavored-markdown'
+Plug 'fatih/vim-go'
 call plug#end()
 
 " Disable F1 for help screen - I open this accidentally all the time!
@@ -63,14 +64,6 @@ let NERDTreeShowHidden=1
 "Open NERDTree if no files specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-" Some stuff for golang
-filetype off
-filetype plugin indent off
-let go_highlight_trailing_whitespace_error = 0
-set runtimepath+=/Users/jordan/projects/opensource/go/misc/vim
-filetype plugin indent on
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 " Enable solarized dark
 syntax enable

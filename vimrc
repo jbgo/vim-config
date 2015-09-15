@@ -1,5 +1,7 @@
 set nocompatible
 
+source ~/.vim/plugin/matchit.vim
+
 " Add some plugins https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'kien/ctrlp.vim'
@@ -11,6 +13,8 @@ Plug 'vim-scripts/HTML-AutoCloseTag'
 Plug 'chase/vim-ansible-yaml'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'fatih/vim-go'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
 call plug#end()
 
 " Disable F1 for help screen - I open this accidentally all the time!

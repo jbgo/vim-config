@@ -15,6 +15,9 @@ Plug 'jtratner/vim-flavored-markdown'
 Plug 'fatih/vim-go'
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-fugitive'
+Plug 'henrik/vim-qargs'
 call plug#end()
 
 " Disable F1 for help screen - I open this accidentally all the time!
@@ -60,7 +63,6 @@ autocmd BufRead,BufNewFile *.jbuilder set filetype=ruby
 autocmd BufRead,BufNewFile Gemfile set filetype=ruby
 autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
 autocmd BufRead,BufNewFile Berksfile set filetype=ruby
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " Show hidden files in NERDTree
 let NERDTreeShowHidden=1
@@ -82,7 +84,7 @@ autocmd FileType php set commentstring=//\ %s
 " GitHub flavored markdown via vim-flavored-markdown
 augroup markdown
   au!
-  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown wrape linebreak nonu tw=80
 augroup END
 
 " yank text to OS X clipboard

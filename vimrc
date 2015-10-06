@@ -18,6 +18,7 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
 Plug 'henrik/vim-qargs'
+Plug 'kchmck/vim-coffee-script'
 call plug#end()
 
 " Disable F1 for help screen - I open this accidentally all the time!

@@ -85,7 +85,7 @@ autocmd FileType php set commentstring=//\ %s
 " GitHub flavored markdown via vim-flavored-markdown
 augroup markdown
   au!
-  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown wrape linebreak nonu tw=80
+  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown wrap linebreak nonu tw=80
 augroup END
 
 " yank text to OS X clipboard

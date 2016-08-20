@@ -19,6 +19,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
 Plug 'henrik/vim-qargs'
 Plug 'kchmck/vim-coffee-script'
+Plug 'lambdatoast/elm.vim'
 call plug#end()
 
 " Disable F1 for help screen - I open this accidentally all the time!
@@ -67,6 +68,7 @@ autocmd BufRead,BufNewFile Berksfile set filetype=ruby
 
 " Show hidden files in NERDTree
 let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\~$', '\.git', '\.vagrant$', '\.pyc$', 'venv$']
 
 "Open NERDTree if no files specified
 autocmd StdinReadPre * let s:std_in=1
@@ -85,7 +87,7 @@ autocmd FileType php set commentstring=//\ %s
 " GitHub flavored markdown via vim-flavored-markdown
 augroup markdown
   au!
-  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown wrap linebreak nonu tw=80
+  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
 
 " yank text to OS X clipboard

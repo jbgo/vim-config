@@ -1,0 +1,1 @@
+/Users/jordan/projects/bullet/contrib/bullet.vim

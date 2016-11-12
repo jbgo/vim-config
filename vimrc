@@ -20,6 +20,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'henrik/vim-qargs'
 Plug 'kchmck/vim-coffee-script'
 Plug 'lambdatoast/elm.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'godlygeek/tabular'
 call plug#end()
 
 " Disable F1 for help screen - I open this accidentally all the time!
@@ -93,3 +95,6 @@ augroup END
 " yank text to OS X clipboard
 " http://evertpot.com/osx-tmux-vim-copy-paste-clipboard/
 set clipboard=unnamed
+
+" Save keystrokes when  finding a file in NERDTree
+map <Leader>f :NERDTreeFind<cr>

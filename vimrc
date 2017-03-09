@@ -18,9 +18,11 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
 Plug 'henrik/vim-qargs'
-Plug 'hashivim/vim-packer'
-Plug 'hashivim/vim-terraform'
-Plug 'hashivim/vim-vagrant'
+Plug 'lambdatoast/elm.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'godlygeek/tabular'
+Plug 'cespare/vim-toml'
+Plug 'hashivim/vim-hashicorp-tools'
 call plug#end()
 
 " Disable F1 for help screen - I open this accidentally all the time!
@@ -69,7 +71,7 @@ autocmd BufRead,BufNewFile Berksfile set filetype=ruby
 
 " Show hidden files in NERDTree
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\~$', '\.git$', '\.vagrant$', '\.pyc$', 'venv$']
+let NERDTreeIgnore=['\~$', '\.git$', '\.vagrant$', '\.pyc$', 'venv$', '\.cache$', '__pycache__$', '^venv$']
 
 "Open NERDTree if no files specified
 autocmd StdinReadPre * let s:std_in=1

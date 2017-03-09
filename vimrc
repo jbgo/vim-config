@@ -18,11 +18,9 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
 Plug 'henrik/vim-qargs'
-Plug 'kchmck/vim-coffee-script'
-Plug 'lambdatoast/elm.vim'
-Plug 'junegunn/goyo.vim'
-Plug 'godlygeek/tabular'
-Plug 'cespare/vim-toml'
+Plug 'hashivim/vim-packer'
+Plug 'hashivim/vim-terraform'
+Plug 'hashivim/vim-vagrant'
 call plug#end()
 
 " Disable F1 for help screen - I open this accidentally all the time!

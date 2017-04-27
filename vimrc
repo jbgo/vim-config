@@ -6,7 +6,6 @@ source ~/.vim/plugin/matchit.vim
 call plug#begin('~/.vim/plugged')
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/HTML-AutoCloseTag'
@@ -77,11 +76,8 @@ let NERDTreeIgnore=['\~$', '\.git$', '\.vagrant$', '\.pyc$', 'venv$', '\.cache$'
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-" Enable solarized dark
+" Enable syntax highlighting
 syntax enable
-set background=dark
-" let g:solarized_termcolors=256
-colorscheme solarized
 
 " PHP settings
 autocmd FileType php set tabstop=4|set shiftwidth=4

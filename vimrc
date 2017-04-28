@@ -93,5 +93,11 @@ augroup END
 " http://evertpot.com/osx-tmux-vim-copy-paste-clipboard/
 set clipboard=unnamed
 
+" yank text to X clipboard
+" http://vimcasts.org/episodes/accessing-the-system-clipboard-from-vim/
+if has('unnamedplus')
+  set clipboard=unnamed,unnamedplus
+endif
+
 " Save keystrokes when  finding a file in NERDTree
 map <Leader>f :NERDTreeFind<cr>

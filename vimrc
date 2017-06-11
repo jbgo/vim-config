@@ -34,6 +34,7 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 set smartindent
+set softtabstop=0
 
 " Disable backup and swap files because they cause more problems than they solve
 set nobackup
@@ -86,6 +87,9 @@ colorscheme solarized
 " PHP settings
 autocmd FileType php set tabstop=4|set shiftwidth=4
 autocmd FileType php set commentstring=//\ %s
+
+" Go golang setting overrides
+autocmd BufNewFile,BufRead *.go setlocal expandtab tabstop=2 shiftwidth=2
 
 " GitHub flavored markdown via vim-flavored-markdown
 augroup markdown
